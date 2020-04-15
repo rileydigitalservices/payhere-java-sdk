@@ -33,7 +33,7 @@ publishing {
         mavenJava(MavenPublication) {
             customizePom(pom)
             groupId 'com.rileydigitalservices'
-            artifactId 'mtnmomo-java'
+            artifactId 'payhere-sdk'
             version '1.0.0'
 
             from components.java

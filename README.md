@@ -1,6 +1,4 @@
-# MTN MoMo API Java Client</h1>
-
-<strong>Power your apps with our MTN MoMo API</strong>
+# Payhere API Java Client</h1>
 
 <div>
   <a href="https://spectrum.chat/payhere-api-sdk/">Spectrum</a>

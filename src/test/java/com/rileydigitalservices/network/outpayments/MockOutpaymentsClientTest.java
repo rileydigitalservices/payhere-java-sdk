@@ -1,4 +1,4 @@
-package com.rileydigitalservices.network.disbursements;
+package com.rileydigitalservices.network.outpayments;
 
 public class MockOutpaymentsClientTest {
 }

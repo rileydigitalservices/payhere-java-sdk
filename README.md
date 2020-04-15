@@ -6,7 +6,7 @@
 </div>
 
 
-[![Build Status](https://travis-ci.com/rileydigitalservices/payhere-java-sdk.svg?branch=master)](https://travis-ci.com/rileydigitalservices/payhere-java-sdk)
+[![Build Status](https://travis-ci.org/rileydigitalservices/payhere-java-sdk.svg?branch=master)](https://travis-ci.org/rileydigitalservices/payhere-java-sdk)
 [![Coverage Status](https://coveralls.io/repos/github/rileydigitalservices/payhere-java-sdk/badge.svg?branch=master)](https://coveralls.io/github/rileydigitalservices/payhere-java-sdk?branch=master)
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/payhere-api-sdk/)
 

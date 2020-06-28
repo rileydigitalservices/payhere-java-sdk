@@ -130,9 +130,9 @@ public class RequestOptions {
     private String username;
     private String password;
 
-    private String baseUrl = "http://api.payhere.africa";
+    private String baseUrl = "https://api.payhere.africa";
 
-    private String version = "V1";
+    private String version = "v1";
 
     private String targetEnvironment = "sandbox";
 

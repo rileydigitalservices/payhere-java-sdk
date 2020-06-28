@@ -31,7 +31,6 @@ public class Transfer {
     this.amount = amount;
     this.processingNumber = processingNumber;
     this.narration = narration;
-
   }
 }
 

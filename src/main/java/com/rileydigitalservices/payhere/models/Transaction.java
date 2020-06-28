@@ -52,7 +52,5 @@ public class Transaction {
 
     private String code;
     private String message;
-
-
   }
 }

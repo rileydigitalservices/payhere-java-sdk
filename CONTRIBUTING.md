@@ -58,7 +58,7 @@ If you are proposing a feature:
 * Keep the scope as narrow as possible, to make it easier to implement.
 * Remember that this is a volunteer-driven project, and that code contributions are welcome :)
 
-If you would like to send us feedback, simply [file an issue](https://github.com/rileydigitalservices/momoapi-python/issues/new/choose).
+If you would like to send us feedback, simply [file an issue](https://github.com/rileydigitalservices/payhere-java-sdk/issues/new/choose).
 
 ## Local Development
 

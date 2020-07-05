@@ -16,7 +16,6 @@ public class RequestOptionsTest {
         .setPassword("sdk@2020")
         .setVersion("v1")
         .setTargetEnvironment("sandbox")
-        .setBaseUrl("new_base")
         .build().toBuilder();
 
 

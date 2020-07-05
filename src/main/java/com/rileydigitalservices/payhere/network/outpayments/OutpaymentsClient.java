@@ -38,6 +38,7 @@ public class OutpaymentsClient {
    * @param opts RequestOptions
    */
   public OutpaymentsClient(RequestOptions opts) {
+    String url = "https://api.payhere.africa/api/" + opts.getVersion();
     this.opts = opts;
     this.gson = new GsonBuilder()
         .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
@@ -66,10 +67,13 @@ public class OutpaymentsClient {
     this.httpClient = okhttpbuilder
         .build();
 
+    if(opts.getTargetEnvironment() == "sandbox"){
+      url = "https://api-sandbox.payhere.africa/api/" + opts.getVersion();
+    }
 
     this.retrofitClient = new Retrofit.Builder()
         .client(this.httpClient)
-        .baseUrl(opts.getBaseUrl())
+        .baseUrl(url)
         .addConverterFactory(GsonConverterFactory.create(gson))
         .addConverterFactory(ScalarsConverterFactory.create())
         .build();

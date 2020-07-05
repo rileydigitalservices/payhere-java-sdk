@@ -43,7 +43,6 @@ public class BaseClient {
                           final @NonNull OkHttpClient okHttpClient) {
     return new Retrofit.Builder()
         .client(okHttpClient)
-        .baseUrl(apiEndpoint)
         .addConverterFactory(GsonConverterFactory.create(getGson()))
         .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
         .build();

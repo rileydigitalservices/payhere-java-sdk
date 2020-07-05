@@ -68,7 +68,6 @@ public class AuthorizationInterceptor implements Interceptor {
 
     Retrofit retrofitClient = new Retrofit.Builder()
         .client(httpClient)
-        .baseUrl(this.opts.getBaseUrl())
         .addConverterFactory(GsonConverterFactory.create(gson))
         .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
         .build();

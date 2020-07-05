@@ -12,7 +12,6 @@ public class RequestOptions {
   private final String password;
 
 
-  private final String baseUrl;
   private final String targetEnvironment;
   private final String version;
 
@@ -22,14 +21,12 @@ public class RequestOptions {
    * @param username    String
    * @param password   String
    * @param appId       String
-   * @param baseUrl                String
    * @param targetEnvironment      String
    * @param version               String
    */
   public RequestOptions(String username,
                         String password,
                         String appId,
-                        String baseUrl,
                         String targetEnvironment,
                         String version) {
 
@@ -37,7 +34,6 @@ public class RequestOptions {
     this.password = password;
     this.appId = appId;
     
-    this.baseUrl = baseUrl;
     this.targetEnvironment = targetEnvironment;
     this.version = version;
 
@@ -64,7 +60,6 @@ public class RequestOptions {
         .setUsername(this.username)
         .setAppId(this.appId)
         .setVersion(this.version)
-        .setBaseUrl(this.baseUrl)
         .setTargetEnvironment(this.targetEnvironment);
 
   }
@@ -97,15 +92,6 @@ public class RequestOptions {
   }
 
   /**
-   * Get Base Url.
-   *
-   * @return String
-   */
-  public String getBaseUrl() {
-    return this.baseUrl;
-  }
-
-  /**
    * Get Target Environment.
    *
    * @return String
@@ -129,8 +115,6 @@ public class RequestOptions {
     private String appId;
     private String username;
     private String password;
-
-    private String baseUrl = "https://api.payhere.africa";
 
     private String version = "v1";
 
@@ -225,26 +209,6 @@ public class RequestOptions {
     }
 
     /**
-     * Get Base Url.
-     *
-     * @return String
-     */
-    public String getBaseUrl() {
-      return this.baseUrl;
-    }
-
-    /**
-     * Set Base Url.
-     *
-     * @param url String
-     * @return Builder
-     */
-    public Builder setBaseUrl(String url) {
-      this.baseUrl = url;
-      return this;
-    }
-
-    /**
      * Get Target Environment.
      *
      * @return String
@@ -294,8 +258,6 @@ public class RequestOptions {
           this.username,
           this.password,
           this.appId,
-
-          this.baseUrl,
           this.targetEnvironment,
           this.version
       );

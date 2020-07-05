@@ -38,6 +38,7 @@ public class InpaymentsClient extends BaseClient {
    * @param opts RequestOptions
    */
   public InpaymentsClient(RequestOptions opts) {
+    String url = "https://api.payhere.africa/api/" + opts.getVersion();
     this.opts = opts;
     this.gson = getGson();
 
@@ -63,10 +64,13 @@ public class InpaymentsClient extends BaseClient {
     this.httpClient = okhttpbuilder
         .build();
 
+    if(opts.getTargetEnvironment() == "sandbox"){
+      url = "https://api-sandbox.payhere.africa/api/" + opts.getVersion();
+    }
 
     this.retrofitClient = new Retrofit.Builder()
         .client(this.httpClient)
-        .baseUrl(opts.getBaseUrl())
+        .baseUrl(url)
         .addConverterFactory(GsonConverterFactory.create(gson))
         .addConverterFactory(ScalarsConverterFactory.create())
         .build();

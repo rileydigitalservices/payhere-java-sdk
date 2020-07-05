@@ -61,7 +61,6 @@ but can be overidden using the RequestOpts builder
                         .setAppId("MY_APP_ID")
                         .setUsername("MY_USERNAME")
                         .setPassword("MY_PASSWORD")
-                        .setBaseUrl("NEW_PAYHERE_BASE_URL")  // Override the default base url
                         .setTargetEnvironment("sandbox") // Override default target environment
                         build();
 

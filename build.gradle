@@ -162,7 +162,7 @@ test {
 task provisionUser(type: JavaExec) {
     standardInput = System.in
     classpath sourceSets.main.runtimeClasspath
-    main = "ug.sparkpl.momoapi.MomoApi"
+    main = "com.rileydigitalservices.payhere"
 
 }
 

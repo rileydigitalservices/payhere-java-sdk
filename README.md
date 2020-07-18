@@ -24,7 +24,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.rileydigitalservices</groupId>
   <artifactId>payhere-sdk</artifactId>
-  <version>1.2.0</version>
+  <version>1.0.0</version>
 </dependency>
 ```
 
